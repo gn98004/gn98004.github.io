@@ -1,32 +1,30 @@
-HANLANG Games - GitHub Pages 網站包
+HANLANG Games — GitHub Pages 首頁更新包
 
-檔案：
-index.html      工作室首頁
-privacy.html    隱私權政策
-app-ads.txt     AdMob app-ads.txt
-.nojekyll       GitHub Pages 靜態網站設定
+上傳方法
+1. 解壓縮 ZIP。
+2. 將 index.html、assets 資料夾與 .nojekyll 上傳至 gn98004.github.io 儲存庫根目錄。
+3. 以本包 index.html 取代原本的首頁。
+4. 保留網站原本的 privacy.html 和 app-ads.txt；本包不覆寫這兩個檔案。
+5. 提交更新後，等 GitHub Pages 發布完成再重新整理網站。
 
-最簡單上線方式：
-1. GitHub 建立 Repository。
-2. 把這些檔案全部放在 Repository 根目錄。
-3. Settings → Pages。
-4. Source 選 Deploy from a branch。
-5. Branch 選 main / root。
-6. 等待部署完成。
+請勿只貼 HTML 而漏傳 assets；也請勿直接上傳 ZIP，或把整個 hanlang-site 資料夾放到儲存庫內。
 
-若你的 GitHub 帳號是 gn98004，最乾淨的做法是建立：
-gn98004.github.io
+檔案配置
+index.html
+.nojekyll
+assets/
+  heartbound.png          心動封界（使用提供的原始封面）
+  dark-potion.png         倒水幽暗魔瓶（使用提供的原始封面）
+  doomsday-bunker.png     末日地堡（使用提供的原始封面）
+  studio-hero.png         AI 生成的首頁情境美術
+  favicon.svg            網站圖示
+privacy.html             保留儲存庫中現有檔案
+app-ads.txt              保留儲存庫中現有檔案
 
-這樣網址會是：
-https://gn98004.github.io/
-https://gn98004.github.io/privacy.html
-https://gn98004.github.io/app-ads.txt
-
-正式上架前請記得：
-把 privacy.html 裡的「聯絡信箱將於正式商店上架前補上」改成真正客服／開發者信箱。
-
-之後新增遊戲：
-複製 index.html 裡任一 <article class="card">...</article> 區塊，再改名稱、狀態、簡介。
-
-之後新增公告：
-複製 index.html 裡任一 <div class="news">...</div> 區塊，再改日期、標題、內容。
+所有圖片皆使用相對路徑；CSS 已內嵌於 index.html。
+不需建置工具、套件安裝、外部字型或 JavaScript。
+桌面版封面由左至右：心動封界、倒水幽暗魔瓶、末日地堡。
+手機版改為同順序由上至下顯示，封面完整呈現。
+最新消息可點擊展開；沒有尚未提供的下載、預約或訂閱連結。
+英文 DARK POTION 與 DOOMSDAY BUNKER 為版面描述用字，非已確認的商店英文名稱。
+原對話未提供可讀取的獨立網站概念圖，本版以原始封面配合深色奇幻工作室風格製作。
